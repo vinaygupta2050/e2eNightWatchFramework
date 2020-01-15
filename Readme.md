@@ -4,7 +4,7 @@ Nightwatch is Node.js based end-to-end test framework which unables us to write 
 
 ## Getting Started
 
-To get started clone project from github. Use below are some component which has their significance running the test
+To get started clone project from github. Below are some component which has their significance running the test
 
 -	Configuring and Setting up Nightwatch.js
 
