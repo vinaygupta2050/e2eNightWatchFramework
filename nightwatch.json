@@ -1,0 +1,60 @@
+{
+  "src_folders": ["tests"],
+  "output_folder": "./reports",
+  "custom_command_paths": "./commands",
+  "custom_assertions_path": "",
+  "page_objects_path": "pages",
+  "globals_path": "globals.js",
+  "selenium": {
+    "start_process": true,
+    "server_path": "./node_modules/nightwatch/bin/selenium.jar",
+    "start_session": true,
+    "log_path": "log/",
+    "host": "127.0.0.1",
+    "port": 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/nightwatch/bin/chromedriver",
+      "webdriver.gecko.driver": "./node_modules/geckodriver/geckodriver"
+    }
+  },
+  "test_settings": {
+    "default": {
+      "silent": true,
+      "detailed_output": false,
+      "test_workers": {"enabled": true,"worker": 8},
+      "launch_url": "http://localhost:3000",
+      "screenshots": {
+        "enabled": true,
+        "path": "./screenshots",
+        "on_error": true,
+        "on_failure": true
+      }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "w3c": false,
+          "args": [
+            "start-maximized"
+          ]
+        }
+      }
+    },
+    "chromeHeadless": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "w3c": false,
+          "args": [
+            "start-maximized","headless", "no-sandbox", "disable-gpu", "window-size=1920,1080"
+          ]
+        }
+      }
+    }
+  }
+}

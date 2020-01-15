@@ -1,0 +1,18 @@
+{
+  "name": "e2eframework",
+  "version": "1.0.0",
+  "description": "to learn nightwatch",
+  "main": "nightwatch.js",
+  "scripts": {
+    "test": "nmp test"
+  },
+  "author": "vinaykumar gupta",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^1.3.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^78.0.1",
+    "selenium-server": "^3.141.59"
+  }
+}
