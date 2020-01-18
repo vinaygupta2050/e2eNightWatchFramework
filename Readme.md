@@ -40,13 +40,22 @@ command : docker pull spreecommerce/spree
 
 Once the project is checkedout follow below step to run the application and test. Enter below commands inside project i.e "/e2eNightWatchFramework"
 
-1- Start demo application container using below command. After execution of below command verify whether application is up by hitting url "http://localhost:3000" in browser
+1- Start demo application container using below command.
 
 ```
 ./bootApplication.sh
 ```
 
-2- Run below command to dowload all the package required to run NightWatch.js test
+2- You can access application by hitting url "http://localhost:3000" in browser
+
+4- Credentials of application is below.
+
+```
+    userName    :spree@example.com
+    password    :spree123
+```
+
+3- Run below command to download all the package required to run NightWatch.js test
 
 ```
 npm install --save-dev
